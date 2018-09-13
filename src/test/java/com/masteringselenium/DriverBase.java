@@ -38,7 +38,12 @@ public class DriverBase {
 
 	@AfterMethod(alwaysRun = true)
 	public static void clearCookies() throws Exception {
-		getDriver().manage().deleteAllCookies();
+		try {
+			getDriver().manage().deleteAllCookies();
+		} catch (Exception ex) {
+			System.err.println("Unable to clear cookies: " + ex.getCause());
+		}
+
 	}
 
 	@AfterSuite(alwaysRun = true)

@@ -63,8 +63,8 @@ public class ScreenshotListener extends TestListenerAdapter {
 				System.err.println("Unable to create " + screenshotAbsolutePath);
 			}
 		} catch (Exception ex) {
-			System.err.println("Unable to capturescreenshot...");
-			ex.printStackTrace();
+			System.err.println("Unable to capture screenshot...");
+			ex.getCause();
 		}
 	}
 }
