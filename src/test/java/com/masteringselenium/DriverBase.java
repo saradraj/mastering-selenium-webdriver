@@ -29,12 +29,12 @@ public class DriverBase {
 		};
 	}
 
-	public static RemoteWebDriver getDriver() {
+	public static RemoteWebDriver getDriver() throws Exception {
 		return driverThread.get().getDriver();
 	}
 
 	@AfterMethod(alwaysRun = true)
-	public static void clearCookies() {
+	public static void clearCookies() throws Exception {
 		getDriver().manage().deleteAllCookies();
 	}
 

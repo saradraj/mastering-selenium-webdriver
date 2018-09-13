@@ -13,7 +13,7 @@ public class BasicIT extends DriverBase {
 		return driver -> driver.getTitle().toLowerCase().startsWith(searchString.toLowerCase());
 	}
 
-	private void googleExampleThatSearchesFor(final String searchString) {
+	private void googleExampleThatSearchesFor(final String searchString) throws Exception {
 
 		WebDriver driver = DriverBase.getDriver();
 
@@ -35,12 +35,12 @@ public class BasicIT extends DriverBase {
 	}
 
 	@Test
-	public void googleCheeseExample() {
+	public void googleCheeseExample() throws Exception {
 		googleExampleThatSearchesFor("Cheese!");
 	}
 
 	@Test
-	public void googleMilkExample() {
+	public void googleMilkExample() throws Exception {
 		googleExampleThatSearchesFor("Milk!");
 	}
 	
