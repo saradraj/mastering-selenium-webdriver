@@ -8,9 +8,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import com.masteringselenium.config.DriverFactory;
+import com.masteringselenium.listeners.ScreenshotListener;
 
+@Listeners(ScreenshotListener.class)
 public class DriverBase {
 
 	private static List<DriverFactory> webDriverThreadPool = Collections

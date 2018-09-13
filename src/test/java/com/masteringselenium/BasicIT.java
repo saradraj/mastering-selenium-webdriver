@@ -43,10 +43,4 @@ public class BasicIT extends DriverBase {
 	public void googleMilkExample() throws Exception {
 		googleExampleThatSearchesFor("Milk!");
 	}
-	
-	// @Test
-	// public void googleBreadExample() {
-	// googleExampleThatSearchesFor("Bread!");
-	// }
-
 }

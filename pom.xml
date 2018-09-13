@@ -26,6 +26,7 @@
 		<seleniumGridURL />
 		<platform />
 		<browserVersion />
+		<screenshotDirectory>${project.build.directory}/screenshots</screenshotDirectory>
 		<!-- http://mrselenium144:164cbf02-b7fb-4011-a424-5bcdf85d1cf7@ondemand.saucelabs.com:80/wd/hub win10 55 -->
 	</properties>
 	<build>
@@ -49,6 +50,7 @@
 					<systemPropertyVariables>
 						<browser>${browser}</browser>
 						<headless>${headless}</headless>
+						<screenshotDirectory>${screenshotDirectory}</screenshotDirectory>
 						<remoteDriver>${remote}</remoteDriver>
 						<gridURL>${seleniumGridURL}</gridURL>
 						<desiredPlatform>${platform}</desiredPlatform>
