@@ -21,7 +21,7 @@
 		<threads>1</threads>
 		<browser>firefox</browser>
 		<overwrite.binaries>false</overwrite.binaries>
-		<headless>true</headless>
+		<headless>false</headless>
 	</properties>
 	<build>
 		<plugins>
