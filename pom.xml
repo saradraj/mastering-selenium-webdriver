@@ -20,7 +20,7 @@
 		<!-- Configurable variables -->
 		<threads>1</threads>
 		<browser>firefox</browser>
-		<overwrite.binaries>false</overwrite.binaries>
+		<overwrite.binaries>true</overwrite.binaries>
 		<headless>false</headless>
 	</properties>
 	<build>
